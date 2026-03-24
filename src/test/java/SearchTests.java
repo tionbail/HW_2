@@ -16,7 +16,7 @@ public class SearchTests {
 
     @Test
     void successfulSearchTestYandex() {
-        open("https://ya.ru/");
+        open("https://yandex.ru/");
         $("[name=text]").setValue("selenide").pressEnter();
         $("[class=content]").shouldHave(text("https://selenide.org"));
     }
